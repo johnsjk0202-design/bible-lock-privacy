@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>바이블락 포그라운드 서비스 시연 | BibleLock FGS demo</title>
+<style>
+  body { margin:0; background:#1c1917; color:#fdf8ee; font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",Roboto,sans-serif; line-height:1.7; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 20px; margin: 0 0 6px; }
+  p { color:#d6d3d1; font-size: 14px; margin: 0 0 18px; }
+  ol { color:#d6d3d1; font-size: 14px; padding-left: 20px; }
+  video { width: 100%; max-width: 400px; border-radius: 14px; display:block; margin: 0 auto 22px; background:#000; }
+  a { color:#d6b483; }
+  .en { color:#78716c; font-size:12px; margin-top:26px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>바이블락 — 포그라운드 서비스 시연</h1>
+  <p>FOREGROUND_SERVICE_SPECIAL_USE (LockGuardService, 하위 유형 meditation_scripture_lock_guard)</p>
+  <video src="fgs-demo.mp4" controls playsinline preload="metadata"></video>
+  <ol>
+    <li>바이블락을 실행합니다.</li>
+    <li>잠금이 시작되면 말씀 잠금 화면이 표시되고, 잠금 유지 서비스가 포그라운드 서비스로 동작합니다.</li>
+    <li>말씀을 마지막 페이지까지 넘겨 읽어야 잠금이 해제됩니다.</li>
+    <li>잠금이 해제되면 서비스는 종료되고, 잠금 중에는 알림창의 ‘실행 중인 앱’에 서비스가 표시됩니다.</li>
+  </ol>
+  <p class="en">Screen recording of the app: starting a lock, reading the scripture pages while the lock holds, unlocking at the last page, and the foreground service notification shown under “Running apps”.</p>
+</div>
+</body>
+</html>
